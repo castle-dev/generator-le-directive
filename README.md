@@ -15,6 +15,8 @@ Simply run the generator from the root of your app's folder
   yo le-directive
 ```
 
+![Demo](https://raw.githubusercontent.com/castle-dev/generator-le-directive/develop/generator-le-directive-demo.gif "Demo")
+
 ## Dependencies
 
 ### What is Yeoman?
