@@ -1,19 +1,18 @@
-# generator-le-module [![Build Status](https://secure.travis-ci.org/castle-dev/generator-le-module.png?branch=develop)](https://travis-ci.org/castle-dev/generator-le-module)
+# generator-le-directive [![Build Status](https://secure.travis-ci.org/castle-dev/generator-le-directive.png?branch=develop)](https://travis-ci.org/castle-dev/generator-le-directive)
 
-> Generates a solid starting point for new node modules
+> Generates a new directive based on Castle's conventions
 
 ## Installation
 
-  `npm install -g generator-le-module`
+  `npm install -g generator-le-directive`
 
 ## Usage
 
-Simply run the generator from your new module's folder
+Simply run the generator from the root of your app's folder
 
 ```bash
-  mkdir your-new-module
-  cd your-new-module
-  yo le-module
+  cd client-web
+  yo le-directive
 ```
 
 ## Dependencies
@@ -24,11 +23,8 @@ Basically, he wears a top hat, lives in your computer, and waits for you to tell
 
 Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
 
-This particulator geneartor also requires the [travis-encrypt](https://www.npmjs.com/package/travis-encrypt) npm module.
-
 ```bash
 npm install -g yo
-npm install -g travis-encrypt
 ```
 
 ## License

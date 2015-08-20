@@ -1,10 +1,10 @@
 {
-  "name": "generator-le-module",
-  "version": "1.0.2",
+  "name": "generator-le-directive",
+  "version": "0.1.0",
   "description": "Generates a solid starting point for new node modules",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "castle-dev/generator-le-module",
+  "repository": "castle-dev/generator-le-directive",
   "author": {
     "name": "Castle",
     "email": "castle-dev@entercastle.com",
@@ -21,12 +21,14 @@
   ],
   "dependencies": {
     "chalk": "^1.0.0",
+    "change-case": "^2.3.0",
     "le-ascii-art": "^0.1.0",
     "q": "^1.4.0",
     "yeoman-generator": "^0.19.0",
     "yosay": "^1.0.2"
   },
   "devDependencies": {
+    "chai": "^3.2.0",
     "mocha": "*"
   }
 }
