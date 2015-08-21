@@ -11,7 +11,7 @@
     describe('<%= controllerName %>', function () {
       it('should exist', function () {
         expect(controller).toBeDefined();
-      })
+      });
     });
   });
 })();
