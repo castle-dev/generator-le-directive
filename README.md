@@ -17,6 +17,10 @@ Simply run the generator from the root of your app's folder
 
 ![Demo](https://raw.githubusercontent.com/castle-dev/generator-le-directive/develop/generator-le-directive-demo.gif "Demo")
 
+### Note
+
+In order for the generator to work, your angular project must have a 'client/index.html' and a 'client/src/app/app.js' file. You can optionally add hooks for the generator to include the new files and modules in those two files with the hooks "<!-- YOEMAN HOOK -->" and "/*--YEOMAN-HOOK--*/" respectively.
+
 ## Dependencies
 
 ### What is Yeoman?
