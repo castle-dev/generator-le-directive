@@ -70,8 +70,6 @@ var CastleDirectiveGenerator = yeoman.generators.Base.extend({
     copyTemplate('_directive.js', 'client/src/common/directives/' + answers.paramCaseDirectiveName + '.js');
     copyTemplate('_controller.js', 'client/src/common/controllers/' + answers.paramCaseDirectiveName + '-directive-controller.js');
     copyTemplate('_template.tpl.html', 'client/src/common/partials/' + answers.paramCaseDirectiveName + '.tpl.html');
-    copyTemplate('_test/_directive.spec.js', 'client/test/unit/common/directives/' + answers.paramCaseDirectiveName + '.spec.js');
-    copyTemplate('_test/_controller.spec.js', 'client/test/unit/common/controllers/' + answers.paramCaseDirectiveName + '-directive-controller.spec.js');
     addToIndex('tmp/common/directives/' + answers.paramCaseDirectiveName + '.js');
     addToIndex('tmp/common/controllers/' + answers.paramCaseDirectiveName + '-directive-controller.js');
     addToAppModules('common.controllers.' + answers.controllerName);
