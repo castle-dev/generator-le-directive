@@ -69,11 +69,7 @@ var CastleDirectiveGenerator = yeoman.generators.Base.extend({
     answers.controllerName = answers.pascalCaseDirectiveName + 'DirectiveController';
     copyTemplate('_directive.js', 'client/src/common/directives/' + answers.paramCaseDirectiveName + '.js');
     copyTemplate('_controller.js', 'client/src/common/controllers/' + answers.paramCaseDirectiveName + '-directive-controller.js');
-    copyTemplate('_template.tpl.html', 'client/src/common/partials/' + answers.paramCaseDirectiveName + '.tpl.html');
-    addToIndex('tmp/common/directives/' + answers.paramCaseDirectiveName + '.js');
-    addToIndex('tmp/common/controllers/' + answers.paramCaseDirectiveName + '-directive-controller.js');
-    addToAppModules('common.controllers.' + answers.controllerName);
-    addToAppModules('common.directives.' + answers.camelCaseDirectiveName);
+    copyTemplate('_template.tpl.html', 'client/src/common/partials-lazy/' + answers.paramCaseDirectiveName + '.tpl.html');
   },
 });
 
