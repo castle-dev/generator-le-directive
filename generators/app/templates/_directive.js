@@ -1,10 +1,10 @@
 (function() {
   'use strict';
 
-  function <%= camelCaseDirectiveName %> () {
+  function <%= camelCaseDirectiveName %> (lazyLoadService) {
     return {
       restrict: 'E',
-      templateUrl: 'src/common/partials/<%= paramCaseDirectiveName %>.tpl.html',
+      templateUrl: lazyLoadService.getComponentTemplateFileName('<%= paramCaseDirectiveName  %>'),
       controller: '<%= controllerName %>',
       controllerAs: 'vm',
       bindToController: true,
@@ -13,6 +13,8 @@
     };
   }
 
-  angular.module('common.directives.<%= camelCaseDirectiveName %>', [])
+  angular.module('common.directives.<%= camelCaseDirectiveName %>', [
+    'common.services.lazyLoad'
+  ])
     .directive('<%= camelCaseDirectiveName %>', <%= camelCaseDirectiveName %>);
 })();
