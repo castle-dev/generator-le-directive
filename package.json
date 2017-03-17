@@ -1,6 +1,6 @@
 {
   "name": "generator-le-directive",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Generates a solid starting point for new node modules",
   "license": "MIT",
   "main": "app/index.js",
